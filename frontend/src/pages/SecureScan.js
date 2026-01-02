@@ -12,7 +12,7 @@ export default function SecureScan() {
   const [code, setCode] = useState('');
   const [language, setLanguage] = useState('python');
   const [projectContext, setProjectContext] = useState('Enterprise');
-  const [scanProfile, setScanProfile] = useState('Deep');
+  const [scanProfile, setScanProfile] = useState('Fast');
   const [isAnalyzing, setIsAnalyzing] = useState(false);
   const [detectedLanguage, setDetectedLanguage] = useState(null);
   
