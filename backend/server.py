@@ -101,7 +101,7 @@ class Lesson(BaseModel):
 # OWASP Top 10 and Security Rules
 SECURITY_RULES = {
     'SQL_INJECTION': {
-        'patterns': [r'execute\(.*\+.*\)', r'SELECT.*\+.*FROM', r'query\(.*\+', r'cursor\.execute\(.*%'],
+        'patterns': [r'execute\(.*\+', r'SELECT.*\+.*FROM', r'SELECT.*\"\s*\+', r'WHERE.*\+', r'cursor\.execute\(.*%'],
         'severity': 'Critical',
         'owasp': 'A03:2021 - Injection',
         'description': 'SQL Injection vulnerability detected'
